@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         brand: {
-          wax: '#FAFAF9',
+          wax: '#F5F5F4',
           wick: '#292524',
           sapphire: '#1D4ED8',
           caramel: '#D97706',
