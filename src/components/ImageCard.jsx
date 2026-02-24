@@ -3,11 +3,10 @@ import { motion } from 'framer-motion';
 export default function ImageCard({ candle }) {
     return (
         <motion.div
-            initial={{ opacity: 0, scale: 0.95, y: 30 }}
-            whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            className="group overflow-hidden rounded-xl bg-white transition-all duration-500 ease-out hover:scale-[1.03] hover:shadow-2xl"
+            whileInView={{ scale: 1.03, zIndex: 10 }}
+            viewport={{ margin: "-30% 0px -30% 0px" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="group overflow-hidden rounded-xl bg-white transition-all duration-500 ease-out md:hover:scale-[1.03] md:hover:shadow-2xl"
         >
             <div className="relative aspect-[4/5] bg-gray-100 overflow-hidden">
                 <img

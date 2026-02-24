@@ -4,7 +4,7 @@ import heroBg from '../assets/hero-bg.png';
 export default function Hero() {
     return (
         <section
-            className="relative min-h-[85vh] flex flex-col items-center justify-center text-center px-6 py-24 bg-cover bg-center"
+            className="relative min-h-[85vh] flex flex-col items-center justify-center text-center px-6 py-24 bg-cover bg-[80%_center] md:bg-center"
             style={{ backgroundImage: `url(${heroBg})` }}
         >
             {/* Dark overlay for text readability */}
