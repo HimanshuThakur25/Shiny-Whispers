@@ -1,16 +1,17 @@
 import { motion } from 'framer-motion';
 
-export default function ImageCard({ candle }) {
+export default function ImageCard({ candle, onClick }) {
     return (
         <motion.div
+            onClick={onClick}
             whileInView={{ scale: 1.03, zIndex: 10 }}
             viewport={{ margin: "-30% 0px -30% 0px" }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="group overflow-hidden rounded-xl bg-white transition-all duration-500 ease-out md:hover:scale-[1.03] md:hover:shadow-2xl"
+            className="group overflow-hidden rounded-xl bg-white transition-all duration-500 ease-out md:hover:scale-[1.03] md:hover:shadow-2xl cursor-pointer"
         >
             <div className="relative aspect-[4/5] bg-gray-100 overflow-hidden">
                 <img
-                    src={candle.imageUrl}
+                    src={candle.mainImage}
                     alt={candle.altText}
                     loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
