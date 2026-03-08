@@ -54,7 +54,7 @@ export default function ProductModal({ candle, onClose }) {
                     </button>
 
                     {/* Left: Image Gallery */}
-                    <div className="md:w-1/2 relative bg-gray-100 flex items-center justify-center group overflow-hidden min-h-[40vh] md:min-h-0">
+                    <div className="w-full md:w-1/2 relative bg-gray-100 flex items-center justify-center group overflow-hidden h-[40vh] flex-shrink-0 md:h-auto md:min-h-[500px]">
                         <AnimatePresence mode="popLayout">
                             <motion.img
                                 key={currentImageIndex}
