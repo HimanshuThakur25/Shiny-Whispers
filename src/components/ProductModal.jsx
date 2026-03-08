@@ -100,8 +100,8 @@ export default function ProductModal({ candle, onClose }) {
                     </div>
 
                     {/* Right: Product Details */}
-                    <div className="md:w-1/2 p-8 md:p-12 flex flex-col justify-center overflow-y-auto">
-                        <h2 className="text-4xl lg:text-5xl font-serif text-brand-wick mb-4">{candle.title}</h2>
+                    <div className="md:w-1/2 p-6 md:p-12 flex flex-col justify-start md:justify-center overflow-y-auto">
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-brand-wick mb-4 mt-2 md:mt-0">{candle.title}</h2>
 
                         <div className="flex flex-wrap gap-2 mb-8">
                             {candle.tags.map(tag => (
